@@ -113,10 +113,12 @@ ul li:first-child {
 }
 
 .docs-menu > li {
+  border-top: 1px solid rgb(200, 200, 200);
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .docs-menu > li {
+  border-top: 1px solid rgb(200, 200, 200);
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
@@ -133,7 +135,7 @@ ul li:first-child {
   margin: 0;
   max-height: 40px;
   overflow: hidden;
-  padding: 0px 16px;
+  padding: 0 16px;
   text-align: left;
   text-decoration: none;
   white-space: normal;
@@ -141,11 +143,15 @@ ul li:first-child {
 }
 
 .md-button-toggle .md-toggle-icon.toggled {
-  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .md-button.md-default-theme:not([disabled]):hover, .md-button.md-default-theme:not([disabled]):focus {
+  background-color: rgb(158,158,158);
   background-color: rgba(158,158,158,0.2);
 }
 
@@ -157,8 +163,12 @@ ul li:first-child {
   margin: auto 0 auto auto;
   speak: none;
   width: 24px;
-  transition: transform 0.3s ease-in-out;
+  -moz-transition: -webkit-transform 0.3s ease-in-out;
+  -ms-transition: -ms-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  
 }
 
 .docs-menu .menu-toggle-list a.md-button {

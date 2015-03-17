@@ -6,8 +6,6 @@
 var glob = require('glob'),
 	chalk = require('chalk');
 
-process.env.NODE_ENV = 'production';
-
 /**
  * Module init function.
  */
