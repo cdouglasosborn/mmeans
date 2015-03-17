@@ -6,6 +6,9 @@
 var _ = require('lodash'),
 	glob = require('glob');
 
+
+process.env.NODE_ENV = 'production';
+
 /**
  * Load app configurations
  */

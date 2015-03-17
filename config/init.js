@@ -6,6 +6,8 @@
 var glob = require('glob'),
 	chalk = require('chalk');
 
+process.env.NODE_ENV = 'production';
+
 /**
  * Module init function.
  */
@@ -29,5 +31,4 @@ module.exports = function() {
 			console.log(chalk.black.bgWhite('Application loaded using the "' + process.env.NODE_ENV + '" environment configuration'));
 		}
 	});
-
 };
