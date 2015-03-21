@@ -16,63 +16,15 @@
 		</div>
 	</div>
 	<md-content class="md-padding">
-		<div layout="row" layout-margin>
-			<div class="front-page-card">
+		<h2> Latest News </h2>
+		<div layout="row" layout-wrap>
+			<div flex="25" flex-md="50" flex-sm="100" ng-repeat="new in news">
 				<md-card>
-			      <img src="http://placehold.it/350x250" alt="Washed Out">
+			      <img ng-src="{{new.image}}" alt="{{new.title}}">
 			      <md-card-content>
-			        <h2>Paracosm</h2>
+			        <h2>{{new.title}}</h2>
 			        <p>
-			          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-			          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-			        </p>
-			      </md-card-content>
-			    </md-card>
-			</div>
-			<div class="front-page-card">
-				<md-card>
-			      <img src="http://placehold.it/350x250" alt="Washed Out">
-			      <md-card-content>
-			        <h2>Paracosm</h2>
-			        <p>
-			          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-			          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-			        </p>
-			      </md-card-content>
-			    </md-card>
-			</div>
-			<div class="front-page-card">
-				<md-card>
-			      <img src="http://placehold.it/350x250" alt="Washed Out">
-			      <md-card-content>
-			        <h2>Paracosm</h2>
-			        <p>
-			          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-			          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-			        </p>
-			      </md-card-content>
-			    </md-card>
-			</div>
-			<div class="front-page-card">
-				<md-card>
-			      <img src="http://placehold.it/350x250" alt="Washed Out">
-			      <md-card-content>
-			        <h2>Paracosm</h2>
-			        <p>
-			          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-			          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-			        </p>
-			      </md-card-content>
-			    </md-card>
-			</div>
-			<div class="front-page-card">
-				<md-card>
-			      <img src="http://placehold.it/350x250" alt="Washed Out">
-			      <md-card-content>
-			        <h2>Paracosm</h2>
-			        <p>
-			          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-			          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+			          {{new.description}}
 			        </p>
 			      </md-card-content>
 			    </md-card>

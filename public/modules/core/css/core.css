@@ -202,3 +202,18 @@ md-button.md-padded-button {
   padding: 1%;
 }
 
+md-content.md-docs-dark-theme {
+  background-color: rgb(66,66,66);
+  color: white;
+}
+
+.header-contact {
+  background-color: #607d8b;
+  -moz-transition: -webkit-transform 0.3s ease-in-out;
+  -ms-transition: -ms-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+
