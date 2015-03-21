@@ -3,6 +3,7 @@
 {% block content %}
 	<md-content class="md-default-theme">
 		<h3> Sign In</h3>
+    <form data-ng-submit="signin()">
 		<md-input-container>
       <label>Email</label>
       <input type="email" ng-model="user.email" required>
@@ -12,9 +13,18 @@
       <input type="password" ng-model="user.password" required>
     </md-input-container>
 	</md-content>
-		<div class="md-actions">
-			<md-button class="md-button md-primary md-default-theme" ng-transclude="" ng-click="dialog.hide()" tabindex="0">
-				<span class="ng-binding ng-scope">Sign In</span>
+		<div class="">
+			<md-button class="md-raised md-primary md-padded-button" ng-transclude="" ng-click="signin()" tabindex="0">
+				Sign In
 			</md-button>
 		</div>
+  </form>
+</md-content>
+  <md-content class="md-default-theme">
+    <center>
+      <md-button class="md-button md-primary md-default-theme" href="/signup">
+        Create an account
+      </md-button>
+    </center>
+  </md-content>
 {% endblock %}

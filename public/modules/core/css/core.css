@@ -62,7 +62,7 @@ https://github.com/google/material-design-icons
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 600px;
+  height: 400px;
 }
 
 .heroText {
@@ -189,5 +189,16 @@ ul li:first-child {
 
 md-toolbar.md-default-theme {
 	background-color: #009688;
+}
+
+md-button.md-padded-button {
+  padding: 10px 40px;
+}
+
+.front-page-card {
+  width: 16.66%;
+  height: auto;
+  float: left;
+  padding: 1%;
 }
 
