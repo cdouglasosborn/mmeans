@@ -1,8 +1,9 @@
 'use strict';
 
-angular.module('core').controller('ChecklistController', ['$scope',
-	function($scope) {
-		// Controller Logic
-		// ...
+angular.module('core').controller('ChecklistController', ['$scope', '$rootScope',
+	function($scope, $rootScope) {
+		
+		$rootScope.additionalClass = 'header-checklist';	
+
 	}
 ]);

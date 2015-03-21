@@ -8,8 +8,12 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 
 		// Home state routing
 		$stateProvider.
+		state('video', {
+			url: '/videoseries/:videoseries/video/:videoid',
+			templateUrl: 'modules/core/views/video.client.view.html'
+		}).
 		state('videoseries', {
-			url: '/videoseries/:seriesname',
+			url: '/videoseries/:videoseries',
 			templateUrl: 'modules/core/views/videoseries.client.view.html'
 		}).
 		state('dictionary', {

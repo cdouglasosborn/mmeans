@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('core').controller('HeaderController', ['$scope', '$mdSidenav', 'Authentication', 'Menus',
-	function($scope, $mdSidenav, Authentication) {
+angular.module('core').controller('HeaderController', ['$scope', '$mdSidenav', 'Authentication', 'Menus', '$rootScope',
+	function($scope, $mdSidenav, Authentication, $rootScope) {
 		$scope.authentication = Authentication;
 		$scope.isCollapsed = false;
 

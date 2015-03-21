@@ -1,3 +1,32 @@
-<section data-ng-controller="VideoseriesController">
-	This is the Videoseries view
+<section data-ng-controller="VideoseriesController" ng-cloak>
+	<div class="md-default-theme" ng-class="seriesHeader" layout="column">
+		<div flex="30"></div>
+		<div flex="33">
+			<center>
+				<div class="heroText">
+					{{seriesName}}
+					 
+				</div>
+				<div class="heroTextDescription">
+					{{seriesDescription}}
+				</div>
+			</center>
+		</div>
+	</div>
+	<md-content class="md-padding">
+		<h2> Videos </h2>
+		<div layout="row" layout-wrap>
+			<div flex="33" flex-md="50" flex-sm="100" ng-repeat="video in videos">
+				<md-card>
+			      <img ng-src="{{video.image}}" alt="{{video.title}}">
+			      <md-card-content>
+			        <h2>{{video.title}}</h2>
+			        <p>
+			          {{video.description}}
+			        </p>
+			      </md-card-content>
+			    </md-card>
+			</div>
+		</div>
+	</md-content>
 </section>

@@ -6,6 +6,8 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
 		// This provides Authentication context.
 		$scope.authentication = Authentication;
 
+		$rootScope.additionalClass = '';	
+
 		$rootScope.title = 'Welcome';
 
 		$scope.news = [
