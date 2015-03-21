@@ -1,0 +1,38 @@
+<section data-ng-controller="ContactController">
+	<md-content class="md-padding">
+	  <center>
+		<h3> Drop us a line </h3>
+		<p>
+			If you want to find out more information about us fill out the details below.
+		</p>
+	  </center>
+	<form data-ng-submit="signin()">
+		<md-input-container>
+	      <label>Name</label>
+	      <input type="text" ng-model="contact.name" required>
+	    </md-input-container>
+	    <md-input-container>
+	      <label>Email</label>
+	      <input type="email" ng-model="contact.email" required>
+	    </md-input-container>
+	    <md-input-container>
+	      <label>Phone</label>
+	      <input type="phone" ng-model="contact.phone" >
+	    </md-input-container>
+	    <md-input-container>
+	      <label>Company Name</label>
+	      <input type="text" ng-model="contact.companyName" >
+	    </md-input-container>
+	    <md-input-container flex>
+        <label>Message</label>
+        <textarea ng-model="contact.message" columns="1" md-maxlength="150" required></textarea>
+      </md-input-container>
+		</md-content>
+			<div class="">
+				<md-button class="md-raised md-primary md-padded-button" ng-transclude="" ng-click="contactus()" tabindex="0">
+					Message Us
+				</md-button>
+			</div>
+	  </form>
+	</md-content>
+</section>
